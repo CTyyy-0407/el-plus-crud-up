@@ -1,5 +1,5 @@
 {
-  "name": "el-plus-crud-up",
+  "name": "crud-up",
   "description": "基于el-plus-crud上做细微修改以适配新的依赖特性 原版请见https://github.com/KDJack/el-plus-crud",
   "author": "Ctiyama",
   "version": "0.1.1",
