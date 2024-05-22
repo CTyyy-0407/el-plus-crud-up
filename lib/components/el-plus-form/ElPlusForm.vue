@@ -45,7 +45,7 @@ export default {
 }
 </script>
 <script lang="ts" setup>
-import { ref, computed, useAttrs, nextTick, onMounted, watch, inject, Ref, useSlots } from 'vue'
+import { ref, computed, useAttrs, nextTick, onMounted, watch, inject, Ref, useSlots, onUnmounted } from 'vue'
 import { castArray, isMobile, time, isPromiseLike } from '../../util'
 import * as validates from './util/validate'
 import { typeList } from './components/index'
@@ -855,6 +855,10 @@ onMounted(async () => {
   nextTick(() => {
     clearValid()
   })
+})
+
+onUnmounted(() => {
+  clear()
 })
 
 // 暴露对外方法
